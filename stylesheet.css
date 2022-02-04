@@ -1,0 +1,242 @@
+html{
+    box-sizing: border-box;
+}
+
+@font-face {
+font-family: 'Righteous', cursive;
+}
+
+body {
+    background-color: #ffc400;
+    color: #ffffff;
+    margin: 0px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+.happy{
+    font-family: 'Righteous';
+    position: absolute;
+    
+    margin: 150px 300px;
+    font-size: 150px;
+    z-index: 999;
+    text-align: center;
+    text-shadow: -10px 10px 0px #f57975,
+    -20px 20px 0px #cf3f87,
+    -30px 30px 0px #b32366;
+    
+}
+
+.happy:hover{
+    animation-name: shuffle;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shuffle{
+    0%{
+        color: #ffffff;
+        text-shadow:-10px 10px 0px #f57975,
+        -20px 20px 0px #cf3f87,
+        -30px 30px 0px #b32366;
+    }
+    25%{
+        color: #f57975;
+        text-shadow:-10px 10px 0px #cf3f87,
+        -20px 20px 0px #b32366,
+        -30px 30px 0px #ffffff;
+    }
+    50%{
+        color: #cf3f87;
+        text-shadow:-10px 10px 0px #b32366,
+        -20px 20px 0px #ffffff,
+        -30px 30px 0px #f57975;
+    }
+    75%{
+        color: #b32366;
+        text-shadow:-10px 10px 0px #ffffff,
+        -20px 20px 0px #f57975,
+        -30px 30px 0px #cf3f87;
+    }
+    100%{
+        color: #ffffff;
+        text-shadow:-10px 10px 0px #f57975,
+        -20px 20px 0px #cf3f87,
+        -30px 30px 0px #b32366;
+    }
+}
+
+.waves{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 2;
+    fill: #102542;
+}
+
+.circles{
+    position: absolute;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    z-index: 1;
+}
+
+.circles li:nth-child(1){
+    position: absolute;
+    left: 25%; 
+    width: 0%;
+    height: 0%;
+    animation-delay: 0s;
+    z-index: 1;
+}
+
+
+.circles li:nth-child(2){
+    position: absolute;
+    left: 10%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+    z-index: 1;
+}
+
+.circles li:nth-child(3){
+    position: absolute;
+    left: 70%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 4s;
+    z-index: 1;
+}
+
+.circles li:nth-child(4){
+    position: absolute;
+    left: 40%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+    z-index: 1;
+}
+
+.circles li:nth-child(5){
+    position: absolute;
+    left: 65%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 0s;
+    z-index: 1;
+}
+
+.circles li:nth-child(6){
+    position: absolute;
+    left: 75%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 3s;
+    z-index: 1;
+}
+
+.circles li:nth-child(7){
+    position: absolute;
+    left: 35%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 7s;
+    z-index: 1;
+}
+
+.circles li:nth-child(8){
+    position: absolute;
+    left: 50%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+    z-index: 1;
+}
+
+.circles li:nth-child(9){
+    position: absolute;
+    left: 20%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+    z-index: 1;
+}
+
+.circles li:nth-child(10){
+    position: absolute;
+    left: 85%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+    z-index: 1;
+}
+
+.circles li:nth-child(11){
+    position: absolute;
+    left: 45%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 0s;
+    animation-duration: 40s;
+    z-index: 1;
+}
+
+.circles li:nth-child(12){
+    position: absolute;
+    left: 55%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 0s;
+    animation-duration: 22s;
+    z-index: 1;
+}
+.circles li:nth-child(13){
+    position: absolute;
+    left: 60%;
+    width: 0px;
+    height: 0px;
+    animation-delay: 14s;
+    animation-duration: 10s;
+    z-index: 1;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
